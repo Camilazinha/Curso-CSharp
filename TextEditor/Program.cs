@@ -13,10 +13,12 @@ namespace TextEditor
     static void Menu()
     {
       Console.Clear();
+
       Console.WriteLine("O que deseja fazer?");
       Console.WriteLine("1- Abrir arquivo");
       Console.WriteLine("2- Criar novo arquivo");
       Console.WriteLine("\n0 - Sair");
+
       Console.WriteLine("-------------------");
       short opcao = short.Parse(Console.ReadLine());
 
@@ -48,6 +50,7 @@ namespace TextEditor
     static void Editar()
     {
       Console.Clear();
+
       Console.WriteLine("Editor de texto (ESC para sair)");
       Console.WriteLine("------------------------");
       string texto = "";
@@ -65,6 +68,7 @@ namespace TextEditor
     static void Salvar(string texto)
     {
       Console.Clear();
+      
       Console.WriteLine("Qual caminho para salvar o arquivo?");
       var caminho = Console.ReadLine();
 
